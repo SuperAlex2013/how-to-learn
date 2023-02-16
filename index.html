@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Научиться учиться</title>
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="vendor/normalize.css"> 
+    <link rel="stylesheet" href="./pages/main.css">
 
 
   </head>
@@ -13,15 +13,16 @@
   <body>
     <div class="page">
       <header class="header">
-        <div class="logo logo_place_header"></div>
+        <img class="logo logo_place_header" src="./images/logo_place_header.svg"
+          alt="Надпись Яндекс Практикум">
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">Какие современные и эффективные подходы
           к обучению вы можете использовать в своей жизни?
-          <a class="header__link" href="#">Узнать →</a>
+          <a class="link header__link" href="#">Узнать →</a>
         </p>
         <img class="header__main-illustration" src="./images/header-image.png"
           alt="Картина опять двойка">
-        <div class="header__square-pic"></div>
+        <div class="header__square-pic rotation"></div>
       </header>
       <main>
         <section class="description">
@@ -46,6 +47,84 @@
                 примере обучения в Практикуме.</p>
             </div>
           </div>
+        </section>
+        <section class="techniques">
+          <h2 class="section-title">Техники обучения</h2>
+          <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
+          <ul class="cards">
+            <li class="cards__item">
+              <img class="cards__image"
+                src="./images/cards-attention.png" alt="">
+              <h4 class="cards__title">Два вида внимания</h4>
+              <p class="cards__description">Глубокие знания возникают, если
+                чередовать сфокусированное и рассеянное мышление.</p>
+            </li>
+            <li class="cards__item">
+              <img class="cards__image"
+                src="./images/cards-recall.png" alt="">
+              <h4 class="cards__title">Recall</h4>
+              <p class="cards__descriplion">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+            </li>
+            <li class="cards__item">
+              <img class="cards__image"
+                src="./images/cards-interliving.png" alt="">
+              <h4 class="cards__title">Интерливинг</h4>
+              <p class="cards__descriplion">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+            </li>
+            <li class="cards__item">
+              <img class="cards__image"
+                src="./images/cards-question.png" alt="">
+              <h4 class="cards__title">Вопросы</h4>
+              <p class="cards__descriplion">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+            </li>
+            <li class="cards__item">
+              <img class="cards__image"
+                src="./images/cards-competence.png" alt="">
+              <h4 class="cards__title">Иллюзия компетентности</h4>
+              <p class="cards__descriplion">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+            </li>
+          </ul>
+        </section>
+        <section class="video">
+          <h2 class="section-title">Видео нa TED</h2>
+          <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
+          <div class="video__iframes">
+            <iframe class="video__iframe"
+              src="https://www.youtube.com/embed/arj7oStGLkU" title="Tim Urban:
+              Inside the mind of a master procrastinator | TED" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="video__iframe"
+              src="https://www.youtube.com/embed/5MgBikgcWnY" title="The first
+              20 hours -- how to learn anything | Josh Kaufman | TEDxCSU"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </section>
+        <section class="oakley">
+          <div class="two-columns">
+            <h2 class="two-columns__brief">
+              История Барбары Оакли.
+            </h2>
+            <div class="two-columns__main-text">
+              <p class="two-columns__paragraph">С детства Барбаре не давалась
+                математика. Она считала себя законченным гуманитарием, причём
+                далеко не самым умным. В армии она изучала русский язык, чтобы
+                получить надбавку, да так успешно, что её выдвинули в командиры.
+                Но для продвижения по службе нужно было сдавать математику. И
+                тогда Барбара придумала свой подход к точным наукам. Оказалось,
+                если вам что-то «плохо даётся», ваши добытые трудом знания
+                гораздо глубже, чем у тех, кому всё ясно с первого взгляда.
+                пользы.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="feynman">
+          <h2 class="feynman__title">Метод Фейнмана</h2>
+          <p class="feynman__subtitle">Выучить и не забыть.</p>
+          <a class="link feynman__link" href="#">Подробнее →</a>
         </section>
         <section class="digits">
           <h2 class="section-title">Цифры и факты</h2>
@@ -99,10 +178,22 @@
 
           </ul>
         </section>
-        <section class="feynman">
-          <h2 class="feynman__title">Метод Фейнмана</h2>
-          <p class="feynman__subtitle">Выучить и не забыть.</p>
-          <a class="feynman__link" href="#">Подробнее →</a>
+        <section class="khan">
+          <div class="khan__container">
+            <div class="khan__author">Салман Хан</div>
+            <div class="khan__title">Весь мир — школа</div>
+            <div class="khan__quote">Страсть и новаторство Сала Хана меняют
+              процесс обучения миллионов студентов по всему миру. Книгу «Весь
+              мир — школа» нужно прочитать всем, кто занимается образованием —
+              так учащиеся повсюду смогут получить навыки и знания, которые
+              приносят успех в школе, карьере и жизни.</div>
+            <div class="khan__quote-author">Джордж Лукас</div>
+            <div class="khan__quote-author-subline">Кинорежиссер, продюсер</div>
+            <div class="khan__book-container">
+              <img class="khan__book-pic" src="./images/khan-book.jpg" alt="обложка киги салмана хана"></img>
+              <a class="link khan__book-link" href="#">Купить книгу →</a>
+            </div>
+          </div>
         </section>
         <section class="kaufman">
           <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
@@ -157,7 +248,33 @@
                 скорости.</p>
             </li>
           </ul>
-          <div class="kaufman__triangle"></div>
+          <div class="kaufman__triangle rotation"></div>
+        </section>
+        <section class="resources">
+          <h2 class="section-title">Полезные ресурсы</h2>
+          <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
+          <ul class="resources__logo-zone">
+            <li class="resources__link ">
+              <a class="link" href="#">
+                <img class="resources__logo" src="./images/resources-arzamas.svg">
+              </a>
+            </li>
+            <li class="resources__link ">
+              <a class="link" href="#">
+                <img class="resources__logo" src="./images/resources-n1.svg">
+              </a>
+            </li>
+            <li class="resources__link ">
+              <a class="link" href="#">
+                <img class="resources__logo" src="./images/resources-strelka.svg">
+              </a>
+            </li>
+            <li class="resources__link ">
+              <a class="link" href="#">
+                <img class="resources__logo" src="./images/resources-polka.svg">
+              </a>
+            </li>
+          </ul>
         </section>
       </main>
       <footer class="footer">
@@ -172,19 +289,22 @@
           <nav class="footer__column footer__column_content_info">
             <h4 class="footer__column-heading">О практикуме</h4>
             <div class="footer__column-links">
-              <a class="footer__column-link" href="#">Главная</a>
-              <a class="footer__column-link " href="#">Концепция</a>
-              <a class="footer__column-link" href="#">Наставники</a>
+              <a class="link footer__column-link" href="#">Главная</a>
+              <a class="link footer__column-link " href="#">Концепция</a>
+              <a class="link footer__column-link" href="#">Наставники</a>
             </div>
           </nav>
           <div class="footer__column footer__column_content_social">
             <h4 class="footer__column-heading">Соцсети</h4>
             <div class="footer__column-links">
-              <a class="footer__column-link "><img class="footer__social-icon"
+              <a class="link footer__column-link "><img
+                  class="footer__social-icon"
                   src="./images/youtube-icon.svg" alt="Логотип ютьюб">YouTube</a>
-              <a class="footer__column-link"><img class="footer__social-icon"
+              <a class="link footer__column-link"><img
+                  class="footer__social-icon"
                   src="./images/vk_color_white.svg" alt="логотип ВКонтакте">ВКонтакте</a>
-              <a class="footer__column-link"><img class="footer__social-icon"
+              <a class="link footer__column-link"><img
+                  class="footer__social-icon"
                   src="./images/tiktok-icon.svg" alt="Логотип тиктока">TikTok</a>
             </div>
           </div>
