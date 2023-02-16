@@ -16,3 +16,9 @@ One pagecd rovides information on the brain and learning, including statistics o
 * links
 * animations
 * some cool guys looking at you
+
+
+## TechNOLOGies
+
+* html
+* css
